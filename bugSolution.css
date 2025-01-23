@@ -1,0 +1,12 @@
+The solution is to separate the calculations to ensure consistent behavior.
+
+```css
+.element {
+  width: calc(25% - 5% + 10px);
+}
+/*or */
+.element {
+  width: calc(20% + 10px);
+}
+```
+This explicitly calculates 20% of the container width and then adds 10 pixels, producing a consistent and predictable result across browsers.
