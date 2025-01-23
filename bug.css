@@ -1,0 +1,7 @@
+The following CSS code snippet demonstrates an uncommon error that can occur when using the `calc()` function with percentages and lengths.  The expected behavior is to calculate 25% of the container's width, add 10 pixels, and then subtract 5% of the container's width. However, this may not work as expected in all browsers.
+
+```css
+.element {
+  width: calc(25% + 10px - 5%);
+}
+```
